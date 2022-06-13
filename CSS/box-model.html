@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <style>
+        /* Primer ejercicio  */
+
+        .box1 {
+            border: 5px solid rebeccapurple;
+            background-color: lightgray;
+            padding: 40px;
+            margin: 40px;
+            width: 300px;
+            height: 150px;
+        }
+
+        .alternate {
+            box-sizing: border-box;
+            width: 390px;
+        }
+
+        /* Segundo ejercicio  */
+
+        .box2 {
+            border: 5px dotted black;
+            /* margin-top: 20px;
+            margin-right: 10px;
+            margin-bottom: 40px;
+            margin-left: 15px; */
+
+            margin: 20px 10px 40px 15px;
+            padding: 30px;
+        }
+
+        /* Tercer ejercicio */
+
+        .box3 {
+            max-width: 600px;
+        }
+        
+        .box3 span {
+            background-color: pink;
+            border: 5px solid black;
+            padding: 1em;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Ejercicios box-model</h1>
+    <h2>Primer ejercicio</h2>
+    <p>A continuación tenemos dos cajas, la primera utiliza el box-model
+        estándar mientras que la segunda usa el modelo alternativo.</p>
+
+    <p>Cambia el ancho de la segunda caja, agregando reglas a la clase
+        .alternate para que tenga visualmente el mismo ancho que
+        la primer caja</p>
+
+    <div class="box1">Yo uso el box-model estándar</div>
+    <div class="box1 alternate">Yo uso el box-model alternativo.</div>
+
+    <hr>
+    <!--------------------------->
+
+    <h2>Segundo ejercicio</h2>
+    <p>Para este ejercicio, agrega las siguientes características a la caja con la clase <code>.box2</code></p>
+    <ul>
+        <li>Un borde punteado, negro y de 5px</li>
+        <li>Un margen superior de 20px</li>
+        <li>Un margen lateral derecho de 10px</li>
+        <li>Un margen inferior de 40px</li>
+        <li>Un margen lateral izquierdo de 15px</li>
+        <li>Relleno de 30px en cada uno de los lados</li>
+    </ul>
+
+    <div class="box2">Yo uso el box-model estándar</div>
+    <hr>
+
+     <!--------------------------->
+    <h2>Tercer ejercicio</h2>
+    <p>En este ejemplo, el elemento <code>inline</code> tiene margin,
+        padding y border, sin embargo, el texto se está encima con este elemento.</p>
+    <p style="margin-bottom: 50px">¿Qué puedes agregar al CSS para causar que el margin, padding y border sea respetado por
+        otras líneas y, al mismo tiempo, manteniendo al elemento <code>inline</code>
+    </p>
+
+    <div class="box3">
+        <p>Veggies es bonus vobis, <span>proinde vos postulo</span> essum magis kohlrabi welsh onion daikon amaranth
+            tatsoi tomatillo melon azuki bean garlic.</p>
+
+</body>
+
+</html>

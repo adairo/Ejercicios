@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title> Web Storage API </title>
+  <style>
+    select,
+    button {
+      font-size: inherit;
+      font-family: inherit;
+    }
+
+    .nombre-aplicacion {
+      text-shadow: 1px 1px white;
+
+      margin: 0;
+      padding: 10px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+<!-- 
+  Instrucciones:
+
+  Cuando el usuario selecciona un color, se debe aplicar
+  dicho color de fondo al elemento header
+
+  Además se debe guardar el color en localStorage, con la clave
+  "user-color"
+
+  Al recargar la página se debe obtener el color guardado y
+  aplicarlo al header
+
+  El botón de "Olvidar datos" debe borrar toda la información
+  almacenada
+ -->
+
+<body>
+  <header>
+    <h1 class="nombre-aplicacion">Web storage </h1>
+  </header>
+  <form action="">
+    <fieldset>
+      <legend>Personalización</legend>
+      <p>
+        <label for="colorInput">Color principal</label>
+        <input type="color" id="colorInput">
+      </p>
+
+      <button data-olvidar>Olvidar datos</button>
+    </fieldset>
+  </form>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formato de texto</title>
+</head>
+<!-- 
+Haz que el <span> dentro del párrafo con la clase 
+"rojo" sea de este color.  
+
+El span dentro del paŕrafo que venga justo después 
+de otro párrafo con clase "rojo", 
+debe tener el texto en negrita
+    
+Selecciona al <span> que se encuentra 
+en el primer elemento de la lista con el atributo data-list
+y aplícale un color de texto azul
+
+selecciona al <span> que está dentro del segundo 
+elemento "li" de la lista con id="lista2" 
+y dale un color morado
+-->
+
+<style>
+    body {
+        font-family: sans-serif;
+        font-size:20px;
+    }
+
+    /* Agrega las reglas css después de esta línea  */
+</style>
+
+<body>
+    <h1>Ejercicio selectores y combinadores</h1>
+    <p class="rojo">En este párrafo, el <span>rojo</span> es nuestro color favorito </p>
+    <p>Mientras que en este párrafo, se pone fuente en <span>negrita</span> </p>
+
+    <ul data-list="uno">
+        <li> El span de este elemento debe estar en <span>azul</span></li>
+        <div>
+            <li> Este elemento no debe estar en <span>azul</span> </li>
+        </div>
+    </ul>
+    <ul id="lista2">
+        <li> Este <span>elemento</span> no se modifica </li>
+        <li> Este elemento debe estar en color <span>morado </span></li>
+    </ul>
+</body>
+
+
+</html>

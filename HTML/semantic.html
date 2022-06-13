@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio HTML semántico</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: sans-serif;
+            --clr-light: rgb(214, 214, 214);
+            --clr-dark: rgb(116, 116, 116);
+            display: grid;
+            grid-template-rows: auto auto 1fr auto;
+            min-height: 100vh;
+        }
+
+        header {
+            font-size: 30px;
+            padding: 10px;
+            background-color: var(--clr-light);
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 5px 20px;
+            background-color: var(--clr-dark);
+            color: white;
+        }
+
+        input[type="search"] {
+            padding: 7px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 15px;
+        }
+
+        nav a {
+            color: inherit;
+        }
+
+        main {
+            display: grid;
+            grid-template-columns: 1fr 300px;
+        }
+
+        h1 {
+            text-transform: uppercase;
+        }
+
+        article {
+            padding: 20px;
+
+        }
+
+        aside {
+            background-color: var(--clr-light);
+            padding: 10px;
+        }
+
+        footer {
+            font-size: 15px;
+            background-color: var(--clr-dark);
+            padding: 15px;
+            color: white;
+        }
+    </style>
+</head>
+<!--
+    Instrucciones:
+    
+    Agrega los elementos html semánticos para mejorar el
+    significado de la página. No es necesario modificar el
+    estilo de la página con CSS.
+
+ -->
+<body>
+    <!-- Nombre de la página -->
+
+    <h1>Wikipedia</h1>
+
+    <!-- Barra de busqueda -->
+    <div class="search-bar">
+        <input type="search" placeholder="Buscar en wikipedia">
+        <button>Buscar</button>
+    </div>
+
+    <!-- Enlaces de navegación -->
+    <ul>
+        <li><a href="">Página principal</a></li>
+        <li><a href="">Artículos</a></li>
+        <li><a href="">Iniciar Sesión</a></li>
+    </ul>
+
+    <!-- Título principal del artículo -->
+    HTML Semántico
+
+    <!-- Nombre de la sección  -->
+    Introducción
+    <!-- Párrafo del artículo -->
+    <p>
+        HTML Semántico es el uso de las etiquetas HTML para reforzar la semántica, o el significado, de la
+        información en las páginas web más que simplemente redefinir su forma de presentación (apariencia).
+        El
+        HTML semántico es procesado por los navegadores web regulares así como por muchos otros agentes de
+        usuarios. Los estilos de CSS son usados para sugerir la presentación de la página a usuarios
+        humanos.
+    </p>
+
+    <!-- Nombre de la sección  -->
+    Historia
+    <!-- Párrafo del artículo -->
+    <p>
+        HTML tiene incluido el marcado semántico desde su creación. En un documento HTML, el autor puede,
+        entre otras cosas, "empezar con un título; añadir encabezados y párrafos; poner énfasis en el texto;
+        insertar imágenes; añadir vínculos a otras páginas; y usar varios tipos de listas.
+    </p>
+
+    <!-- Enlaces secundarios (Barra lateral) -->
+    Índice del artículo
+    <li><a href="">Parte 1</a></li>
+    <li><a href="">Parte 2</a></li>
+    <li><a href="">Parte 3</a></li>
+
+    <!-- Pie de página -->
+    El texto está disponible bajo la Licencia Creative Commons Atribución Compartir Igual 3.0; pueden aplicarse
+    cláusulas adicionales. Al usar este sitio, usted acepta nuestros términos de uso y nuestra política de
+    privacidad.
+</body>
+
+</html>
