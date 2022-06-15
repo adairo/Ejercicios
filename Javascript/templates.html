@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <script src="script.js" defer></script>
+</head>
+
+<style>
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    label {
+        display: block;
+    }
+
+    .note {
+        padding: 1rem;
+        background-color: rgb(255, 255, 113);
+        border: 2px solid black;
+        border-radius: 10px;
+    }
+
+    .note__title {
+        font-weight: bold;
+        font-size: 1.2em;
+    }
+
+    .note__content {
+        background-color: rgb(228, 228, 13);
+        border-radius: 0.5em;
+        padding: 0.5em 1em;
+        margin-top: 0.5em;
+    }
+</style>
+<!-- 
+    Instrucciones:
+    Usa el <template> para crear nuevas notas extrayendo la 
+    información del formulario
+ -->
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Crear nota</legend>
+            <p>
+                <label for="titleInput">Título</label>
+                <input type="text" id="titleInput">
+            </p>
+            <p>
+                <label for="contentInput">Contenido</label>
+                <textarea id="contentInput"></textarea>
+            </p>
+            <button type="button" data-insert>Insertar nota</button>
+        </fieldset>
+    </form>
+
+    <h1>Todas las notas</h1>
+    <template data-note-template>
+        <div class="note">
+            <div class="note__title" data-title></div>
+            <div class="note__content" data-content></div>
+        </div>
+    </template>
+</body>
+</html>
