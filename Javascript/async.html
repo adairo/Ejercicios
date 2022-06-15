@@ -2,21 +2,65 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <title> Programación asíncrona </title>
+    <meta charset="utf-8">
+    <script src="script.js" defer></script>
+    <title>Javascript asíncrono</title>
 </head>
+
+<style>
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    .product {
+        padding: 1rem;
+        box-shadow: 0 0 4px 0 black;
+        border-radius: 15px;
+    }
+
+    .product__img {
+        object-fit: cover;
+        max-width: 100%;
+        border-radius: 10px;
+    }
+
+    .product__title {
+        font-size: 23px;
+        font-weight: bold;
+    }
+
+    .product__price {
+        color: rgb(125, 125, 125);
+        font-weight: bold;
+    }
+
+    .product__description {
+        margin-top: 10px;
+    }
+
+    .lista-productos {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 15px;
+        padding: 20px;
+    }
+</style>
 <!-- 
-    Instrucciones:
-
-    Cuando el usuario presiona el botón se deben solicitar
-    datos de una API y mostrarlos en una lista HTML
-
+    endpoint:
+    https://dummyjson.com/products
  -->
 <body>
-    <button class="boton-usuarios" type="button">Obtener usuarios</button>
-    <ul class="lista-usuarios"></ul>
+    <h1>Todos los productos</h1>
+    <section class="lista-productos" data-products></section>
+
+    <template data-product-template>
+        <div class="product">
+            <img class="product__img">
+            <div class="product__title"></div>
+            <div class="product__price"></div>
+            <div class="product__description"></div>
+        </div>
+    </template>
 </body>
-<script>
-    const endpoint = "https://dummyjson.com/users?limit=100";
-</script>
+
 </html>
